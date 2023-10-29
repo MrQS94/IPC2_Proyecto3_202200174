@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<diccionario> 
+    <sentimientos_positivos> 
+        <palabra>graduacion</palabra>
+        <palabra>felicitaciones</palabra>
+        <palabra>felicidades</palabra>
+        <palabra>reconocimiento</palabra>
+        <palabra>aniversario</palabra>
+        <palabra>emocionados</palabra>
+        <palabra>agradecido</palabra>
+        <palabra>apoyo</palabra>
+        <palabra>gusto</palabra>
+        <palabra>especial</palabra>
+    </sentimientos_positivos>
+    <sentimientos_negativos> 
+        <palabra>desafios</palabra>
+        <palabra>lamentamos</palabra>
+        <palabra>perdida</palabra>
+        <palabra>dificil</palabra>
+        <palabra>perder</palabra>
+        <palabra>separados</palabra>
+        <palabra>aterrador</palabra>
+        <palabra>adios</palabra>
+        <palabra>miedo</palabra>
+        <palabra>afectados</palabra>
+    </sentimientos_negativos>
+</diccionario>

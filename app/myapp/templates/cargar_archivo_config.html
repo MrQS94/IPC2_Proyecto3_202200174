@@ -1,0 +1,21 @@
+{% extends 'home.html'%}
+
+{% block content %}
+<div class="container">
+    <br><br><br>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Cargar archivo xml de mensajes</label>
+            <input class="form-control" type="file" id="formFile" name="archivo_mensajes" accept=".xml">
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Cargar archivo de configuración:</label>
+            <input class="form-control" type="file" id="formFile" name="archivo_config" accept=".xml">
+        </div>
+        <button type="submit" class="btn btn-primary">Procesar</button>
+    </form>
+
+</div>
+{% endblock %}
