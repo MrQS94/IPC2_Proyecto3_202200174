@@ -285,10 +285,11 @@ class Mensaje_DAO():
     def contar_palabras_positivas(self):
         self.inicializar()
         contador = 0
-        for cadena in self.mensajes:
-            for char in cadena.texto.split():
-                if char in self.positivos:
-                    contador += 1
+        for mensaje in self.mensajes:
+            for char in mensaje.texto.split():
+                for positivo in self.positivos:
+                    if char == positivo.replace(' ', ''):
+                        contador += 1
         return contador
     
     def contar_palabras_negativas(self):
@@ -296,8 +297,9 @@ class Mensaje_DAO():
         contador = 0
         for cadena in self.mensajes:
             for char in cadena.texto.split():
-                if char in self.negativos:
-                    contador += 1
+                for negativo in self.negativos:
+                    if char == negativo.replace(' ', ''):
+                        contador += 1
         return contador
     
     def contar_palabras_positivas_rechazadas(self):
